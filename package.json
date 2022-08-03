@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "remix build",
+    "dev:remix": "remix watch",
+    "dev:arc": "cross-env NODE_ENV=development arc sandbox",
+    "dev": "remix build && run-p \"dev:*\"",
+    "start": "cross-env NODE_ENV=production arc sandbox"
+  },
+  "dependencies": {
+    "@remix-run/architect": "^1.6.6",
+    "@remix-run/node": "^1.6.6",
+    "@remix-run/react": "^1.6.6",
+    "cross-env": "^7.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "remix-auth": "^3.2.2",
+    "remix-auth-github": "^1.1.1"
+  },
+  "devDependencies": {
+    "@architect/architect": "^10.3.4",
+    "@remix-run/dev": "^1.6.6",
+    "@remix-run/eslint-config": "^1.6.6",
+    "@types/react": "^17.0.47",
+    "@types/react-dom": "^17.0.17",
+    "eslint": "^8.20.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
